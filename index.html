@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>News App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#" onclick="reload()" class="company-logo">
+                <img src="./assets/logo-jjm.png" alt="company logo">
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hover-link nav-item" id="ipl" onclick="onNavItemClick('ipl')">IPL</li>
+                    <li class="hover-link nav-item" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+                    <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+                    <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('politics')">Stocks</li>
+                    <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('politics')">Entertainment</li>
+                    <li class="hover-link nav-item" id="Contact" onclick="onNavItemClick('Contact')">Trending</li>
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input id="search-text" type="text" class="news-input" placeholder="e.g. Science">
+                <button id="search-button" class="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+    
+
+    <main class="main">
+        
+       
+   <div id="cards-container">
+    <div id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="" alt="news-image" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title"></h3>
+                <h6 class="news-source" id="news-source"></h6>
+                <p class="news-desc" id="news-desc"></p>
+            </div>
+        </div>
+    </div>
+   </div>
+      
+       
+ <button id="show-more-btn" class="button" onclick="showMore()">Show More</button>
+    </main>
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is the Title</h3>
+                <h6 class="news-source" id="news-source">End Gadget 26/08/2023</h6>
+                <p class="news-desc" id="news-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae saepe quis voluptatum quisquam vitae doloremque facilis molestias quae ratione cumque!</p>
+            </div>
+        </div>
+    </template>
+
+  
+    <footer style="margin-top: 3rem;">
+        <div class="">
+            <div class="row footer">
+                <div class="col-1">
+                    <h4>About Us</h4>
+                </div>
+                <div class="col-md-4">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li>Phone:346347234872</li>
+                        <li>Email:jjj@gmail.com</li>
+                        
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a class="icon" href="#"><img src="./assets/facebook.svg"></a>
+                        <a class="icon" href="#"><img src="./assets/instagram.svg"></a>
+                        <a class="icon" href="#"><img src="./assets/x-solid.svg"></a>
+                        <a class="icon" href="#"><img src="./assets/threads.svg"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="text-align: center;font-size:1rem;margin: 3px;">Copy right &#169; 2005</div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html> 
